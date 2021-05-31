@@ -12,11 +12,11 @@ class App extends React.Component {
     render() {
         return (
             <div>
-                <h1>Second React App!</h1>
+                <h1>Hello, you are a {this.props.role}!</h1>
                 <MyComponent />
             </div>
         );
     }
 }
 
-ReactDOM.render(<App />, document.getElementById("app"));
+ReactDOM.render(<App role="developer" />, document.getElementById("app"));

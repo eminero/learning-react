@@ -10,10 +10,12 @@ class MyComponent extends React.Component {
 }
 class App extends React.Component {
     render() {
+        var style = { color: 'red' };
         return (
             <div>
-                <h1>Hello, you are a {this.props.role}!</h1>
+                <h1 style={style}>Hello, you are a {this.props.role}!</h1>
                 <MyComponent />
+                <p className="primary-text">We are using a className property here</p>
             </div>
         );
     }
